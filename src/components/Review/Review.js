@@ -19,7 +19,7 @@ const Review = () => {
         //cart
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
-        fetch('http://localhost:4200/getProductsByKey', {
+        fetch('http://fast-fjord-97929.herokuapp.com/getProductsByKey', {
             method: 'POST', 
             headers: {
               'Content-Type': 'application/json'
